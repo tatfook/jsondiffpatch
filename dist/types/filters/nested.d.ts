@@ -1,0 +1,10 @@
+import DiffContext from '../contexts/diff';
+import PatchContext from '../contexts/patch';
+import ReverseContext from '../contexts/reverse';
+import type { Filter } from '../types';
+export declare const collectChildrenDiffFilter: Filter<DiffContext>;
+export declare const objectsDiffFilter: Filter<DiffContext>;
+export declare const patchFilter: Filter<PatchContext>;
+export declare const collectChildrenPatchFilter: Filter<PatchContext>;
+export declare const reverseFilter: Filter<ReverseContext>;
+export declare const collectChildrenReverseFilter: Filter<ReverseContext>;
