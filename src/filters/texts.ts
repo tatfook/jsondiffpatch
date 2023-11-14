@@ -1,4 +1,4 @@
-import dmp from 'diff-match-patch';
+import * as dmp from 'diff-match-patch';
 import type DiffContext from '../contexts/diff';
 import type PatchContext from '../contexts/patch';
 import type ReverseContext from '../contexts/reverse';
