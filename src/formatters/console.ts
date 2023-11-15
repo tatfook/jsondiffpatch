@@ -1,5 +1,5 @@
 import * as chalk from 'chalk';
-import * as BaseFormatter from './base';
+import BaseFormatter from './base';
 import type { BaseFormatterContext, DeltaType, NodeType } from './base';
 import type {
   AddedDelta,

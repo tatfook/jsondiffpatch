@@ -1,5 +1,5 @@
 import * as chalk from 'chalk';
-import * as BaseFormatter from './base';
+import BaseFormatter from './base';
 import type { BaseFormatterContext, DeltaType, NodeType } from './base';
 import type { AddedDelta, ArrayDelta, DeletedDelta, Delta, ModifiedDelta, MovedDelta, ObjectDelta, TextDiffDelta } from '../types';
 interface ConsoleFormatterContext extends BaseFormatterContext {
@@ -31,5 +31,5 @@ declare class ConsoleFormatter extends BaseFormatter<ConsoleFormatterContext> {
     format_textdiff(context: ConsoleFormatterContext, delta: TextDiffDelta): void;
 }
 export default ConsoleFormatter;
-export declare const format: (delta: Delta, left?: unknown) => any;
+export declare const format: (delta: Delta, left?: unknown) => string | undefined;
 export declare function log(delta: Delta, left?: unknown): void;

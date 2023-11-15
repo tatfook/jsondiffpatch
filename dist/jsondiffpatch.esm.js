@@ -1341,7 +1341,7 @@ class BaseFormatter {
   }
 }
 
-var BaseFormatter$1 = /*#__PURE__*/Object.freeze({
+var base = /*#__PURE__*/Object.freeze({
   __proto__: null,
   default: BaseFormatter
 });
@@ -1932,7 +1932,7 @@ const colors = {
   error: chalk.white.bgRed,
   textDiffLine: chalk.gray
 };
-class ConsoleFormatter extends BaseFormatter$1 {
+class ConsoleFormatter extends BaseFormatter {
   constructor() {
     super();
     this.includeMoveDestinations = false;
@@ -2090,7 +2090,7 @@ var console$1 = /*#__PURE__*/Object.freeze({
 var index = /*#__PURE__*/Object.freeze({
   __proto__: null,
   annotated: annotated,
-  base: BaseFormatter$1,
+  base: base,
   console: console$1,
   html: html,
   jsonpatch: jsonpatch
